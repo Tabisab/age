@@ -18,9 +18,22 @@
       background: linear-gradient(135deg, #2980b9, #6dd5fa);
       min-height: 100vh;
       display: flex;
+      flex-direction: column;
       align-items: center;
       justify-content: center;
       padding: 20px;
+    }
+    .ad-banner {
+      width: 320px;
+      height: 50px;
+      background-color: #f1f1f1;
+      border: 1px dashed #ccc;
+      color: #888;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 15px 0;
+      font-size: 0.9em;
     }
     .calculator {
       background: white;
@@ -80,10 +93,19 @@
       h1 {
         font-size: 1.6em;
       }
+      .ad-banner {
+        width: 100%;
+      }
     }
   </style>
 </head>
 <body>
+
+  <!-- AdMob Top Banner -->
+  <div class="ad-banner">
+    [AdMob Banner Ad Unit ID - Top]
+  </div>
+
   <div class="calculator">
     <h1>Age Calculator</h1>
     <label for="dob">Enter your Date of Birth:</label>
@@ -92,6 +114,12 @@
     <div class="result" id="result">Your age will appear here.</div>
     <footer>© 2025 Age Calculator | Aftab Ahmad</footer>
   </div>
+
+  <!-- AdMob Bottom Banner -->
+  <div class="ad-banner">
+    [AdMob Banner Ad Unit ID - Bottom]
+  </div>
+
   <script>
     function calculateAge() {
       const dob = document.getElementById("dob").value;
